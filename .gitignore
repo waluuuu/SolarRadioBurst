@@ -1,0 +1,6 @@
+/.idea
+/__pycache__
+log.md
+*.h5
+/Classes/__pycache__
+*.pyc
