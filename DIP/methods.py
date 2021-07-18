@@ -5,8 +5,8 @@
 # @Software : PyCharm
 # 中期报告时用来生成展示用的图片，包含了所有的方法
 # %%
-from ImageProcess import ImageProcess
-from ImageProcess import show
+from Normal import Normal
+from show import show
 import cv2 as cv
 import numpy as np
 
@@ -19,7 +19,7 @@ image = cv.imread(path)
 image = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
 
 # %% ------------通道归一化------------------------
-process = ImageProcess(image)
+process = Normal(image)
 show("show", process.process("NORMAL_X"))
 
 # %% ------------自适应二值化------------------------
