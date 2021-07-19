@@ -35,6 +35,20 @@ class Normal:
         img = np.array(img, dtype=np.uint8)
         return img
 
+    def _normalization_z(self):
+        # 张沛锦采用的消除背景缓变噪声的通道归一化方法
+        img = self._image.copy()
+        # list 没有shape方法
+        shape = img.shape
+        # 防止255溢出，先将数组转换成列表
+        image = img.tolist()
+
+        for i in range(shape[0]):
+            channel_mean = np.mean(image[i])
+            image[i] = abs(image[i] - channel_mean)
+        image = np.array(image, dtype=np.uint8)
+        return image
+
     def image_in(self, process="NORMAL_X"):
         """
         :param process:
@@ -60,8 +74,10 @@ class Normal:
     def process(self, method="NORMAL_X"):
         if method == "NORMAL_X":
             image = self._normalization_x()
+        elif method == "NORMAL_Z":
+            image = self._normalization_z()
         else:
-            image = self._normalization_x()
+            return None
         return image
 
 
