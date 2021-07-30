@@ -18,10 +18,10 @@ class ImageChoice2(ImageChoice):
         # 读取路径
         super().__init__(path_read, path_write)
         # 每种类型，训练集和验证集数目
-        self._num = {'2L': [200, 60], '3': [1000, 300], '4': [400, 120], 'count': [400, 120],
+        self._num = {'2noIII': [200, 60], '3': [1000, 300], '4': [400, 120], 'contnoIII': [400, 120],
                      'calibration': [250, 110], 'noburst': [750, 190]}
         # 每种类型的二级目录
-        self._sub_directory = ['2L 340', '3 1387', '4 1205', 'calibration 363', 'count 1881', 'noburst 1998']
+        self._sub_directory = ['2noIII', '3 1387', '4 1145', 'calibration 363', 'contnoIII', 'noburst 1998']
 
     def action(self):
         for sub_dir in self._sub_directory:
@@ -67,6 +67,8 @@ class ImageChoice2(ImageChoice):
 if __name__ == '__main__':
     read = r'G:\useful_L\reshape'
     write = r'G:\useful_L\NEW_NET_3.0'
-    ll = ImageChoice2(read, write).action()
+    ImageChoice2(read, write).action()
+
+
 
 
