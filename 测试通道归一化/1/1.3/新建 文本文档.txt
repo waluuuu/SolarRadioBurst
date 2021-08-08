@@ -1,0 +1,15 @@
+len ret_III is 300 
+len ret_n is 300 
+len ret_O is 300 
+________________________________
+III_III is 265
+III_N is 2
+III_O is 33
+________________________________
+N_III is 7
+N_N is 277
+N_O is 16
+________________________________
+O_III is 13
+O_N is 1
+O_O is 286

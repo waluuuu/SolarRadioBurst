@@ -1,0 +1,24 @@
+len ret_II is 70 
+len ret_III is 120 
+len ret_n is 300 
+len ret_O is 300 
+________________________________
+II_II is 47
+II_III is 6
+II_N is 3
+II_O is 14
+________________________________
+III_II is 7
+III_III is 102
+III_N is 3
+III_O is 8
+________________________________
+N_II is 5
+N_III is 1
+N_N is 293
+N_O is 1
+________________________________
+O_II is 10
+O_III is 10
+O_N is 2
+O_O is 278

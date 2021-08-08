@@ -1,0 +1,15 @@
+len ret_III is 1097 
+len ret_n is 1561 
+len ret_O is 1709 
+________________________________
+III_III is 1097
+III_N is 0
+III_O is 0
+________________________________
+N_III is 0
+N_N is 1561
+N_O is 0
+________________________________
+O_III is 0
+O_N is 0
+O_O is 1709

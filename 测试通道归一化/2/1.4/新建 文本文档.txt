@@ -1,0 +1,15 @@
+len ret_III is 1000 
+len ret_n is 1000 
+len ret_O is 1000 
+________________________________
+III_III is 999
+III_N is 1
+III_O is 0
+________________________________
+N_III is 7
+N_N is 993
+N_O is 0
+________________________________
+O_III is 0
+O_N is 0
+O_O is 1000

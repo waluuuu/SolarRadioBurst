@@ -20,8 +20,8 @@ import cv2 as cv
 # 文件读取路径和保存路径
 
 
-path_read = r'G:\useful_L\calibration'
-path_save = r'G:\useful_L\reshape\calibration'
+path_read = r'C:\Users\dell\Desktop\half'
+path_save = r'C:\Users\dell\Desktop\half'
 
 filenames = os.listdir(path_read)
 
@@ -32,6 +32,9 @@ for filename in filenames:
     if width % 200 > 150:
         n += 1
     new_length = width // n
+    # 这里进行了更改，下面两行根据实际情况取舍
+    if n == 1:
+        continue
     for i in range(n):
         temp = image[:, i * new_length:(i + 1) * new_length]
         cv.imwrite(os.path.join(path_save, filename.split(".")[0] + "{:d}.png".format(i)), temp)
