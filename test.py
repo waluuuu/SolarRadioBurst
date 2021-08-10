@@ -4,13 +4,13 @@
 # @File : test.py
 # @Software : PyCharm
 
+# %%
+import numpy as np
 
-import cv2 as cv
+a = np.zeros((50, 2))
+# %%
+b = np.array([[0, 0], [1, 1], [1, 0]])
 
+#%%
+a[0:3] = b
 
-def show(path):
-    image = cv.imread(path, cv.IMREAD_UNCHANGED)
-    image2 = cv.cvtColor(image, cv.COLOR_RGB2GRAY)
-    cv.imshow('name', image2)
-    cv.waitKey()
-    cv.destroyWindow('name')

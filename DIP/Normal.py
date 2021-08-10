@@ -54,6 +54,7 @@ class Normal:
         :param process:
         NORMAL_X : 徐龙老师的通道归一化，默认方法
         NORMAL_Z : 张沛锦前辈的通道归一化
+        Equalization : 直方图均衡
 
 
         后续会添加别的数字图像处理方法
@@ -62,7 +63,11 @@ class Normal:
         """
         if process == "NORMAL_X":
             out = self._normalization_x()
-
+        elif process == "Equalization":
+            out = self._normalization_z()
+            out = cv.cvtColor(out, cv.COLOR_BGR2GRAY)
+            out = cv.equalizeHist(out)
+            out = cv.cvtColor(out, cv.COLOR_GRAY2RGB)
         else:
             out = self._normalization_x()
 

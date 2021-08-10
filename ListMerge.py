@@ -3,7 +3,6 @@
 # @Author : 水神与月神
 # @File : ListMerge.py
 # @Software : PyCharm
-# 列表合并，看演示的效果
 
 def list_merge(ls):
     out = []
@@ -12,7 +11,7 @@ def list_merge(ls):
         if i == 0:
             out.append(ls[i])
         else:
-            if ls[i][0] < out[-1][-1]:
+            if ls[i][0] <= out[-1][-1]:
                 out[-1][-1] = ls[i][-1]
             else:
                 out.append(ls[i])

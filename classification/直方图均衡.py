@@ -27,20 +27,20 @@ N = r'G:\useful_L\Normal2\NEW_NET_4.0\train\N'
 O = r'G:\useful_L\Normal2\NEW_NET_4.0\train\O'
 V_II = r'G:\useful_L\Normal2\NEW_NET_4.0\val\II'
 V_III = r'G:\useful_L\Normal2\NEW_NET_4.0\val\III'
-V_N = r'G:\useful_L\Normal2\NEW_NET_4.0\val\III'
-V_O = r'G:\useful_L\Normal2\NEW_NET_4.0\val\III'
+V_N = r'G:\useful_L\Normal2\NEW_NET_4.0\val\N'
+V_O = r'G:\useful_L\Normal2\NEW_NET_4.0\val\O'
 
-s_II = r'G:\useful_L\Normal3\NEW_NET_3.0\train\II'
-s_III = r'G:\useful_L\Normal3\NEW_NET_3.0\train\III'
-s_N = r'G:\useful_L\Normal3\NEW_NET_3.0\train\N'
-s_O = r'G:\useful_L\Normal3\NEW_NET_3.0\train\O'
-s_V_II = r'G:\useful_L\Normal3\NEW_NET_3.0\val\II'
-s_V_III = r'G:\useful_L\Normal3\NEW_NET_3.0\val\III'
-s_V_N = r'G:\useful_L\Normal3\NEW_NET_3.0\val\N'
-s_V_O = r'G:\useful_L\Normal3\NEW_NET_3.0\val\O'
+s_II = r'G:\useful_L\Normal3\NEW_NET_4.0\train\II'
+s_III = r'G:\useful_L\Normal3\NEW_NET_4.0\train\III'
+s_N = r'G:\useful_L\Normal3\NEW_NET_4.0\train\N'
+s_O = r'G:\useful_L\Normal3\NEW_NET_4.0\train\O'
+s_V_II = r'G:\useful_L\Normal3\NEW_NET_4.0\val\II'
+s_V_III = r'G:\useful_L\Normal3\NEW_NET_4.0\val\III'
+s_V_N = r'G:\useful_L\Normal3\NEW_NET_4.0\val\N'
+s_V_O = r'G:\useful_L\Normal3\NEW_NET_4.0\val\O'
 
 
-path_s = [[III, s_III], [N, s_N], [O, s_O], [V_III, s_V_III], [V_N, s_V_N], [V_O, s_V_O]]
+path_s = [[II, s_II], [III, s_III], [N, s_N], [O, s_O], [V_II, s_V_II], [V_III, s_V_III], [V_N, s_V_N], [V_O, s_V_O]]
 
 # %%
 

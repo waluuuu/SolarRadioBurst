@@ -5,6 +5,7 @@
 # @Software : PyCharm
 
 import cv2 as cv
+from keras import backend as K
 from ListMerge import list_merge
 from TestModel import TestModel
 from DIP.Normal import Normal
@@ -32,19 +33,25 @@ class LocalWeb:
     def process(self):
         positive = []
         images = SlidingWindow(self._image_path, self._length)
+        count = 0
         for image_info in images.out():
             image = image_info[0]
-            processed = Normal(image, self._size).image_in("NORMAL_X")
+            processed = Normal(image, self._size).image_in("Equalization")
             result = TestModel(self._model_path).predict(processed)
             print(result)
+            count+=1
+            print(count)
             if result < 0.5:
                 positive.append([image_info[1], image_info[2]])
+            K.clear_session()
         self._show(list_merge(positive))
 
     def _show(self, location):
-        image = cv.imread(self._image_path)
+        image = cv.imread(self._image_path, cv.IMREAD_UNCHANGED)
+        image = cv.equalizeHist(image)
+        image = cv.cvtColor(image, cv.COLOR_GRAY2RGB)
         for i in location:
-            cv.rectangle(image, (i[0], 0), (i[1], 800), (255, 0, 0))
+            cv.rectangle(image, (i[0], 50), (i[1], 750), (255, 0, 0))
 
         cv.imshow("test", image)
         cv.waitKey()
@@ -52,8 +59,8 @@ class LocalWeb:
 
 
 if __name__ == '__main__':
-    image_path = r'G:\LearmonthData\learmonth_pics2\10\LM100102.srs.png'
-    model_path = r'F:\SolarRadioBurst\typeIII\typeIII_binary_normalization_100_1.4_50.h5'
+    image_path = r"C:\Users\dell\Desktop\LM030122.srs.png"
+    model_path = r'F:\SolarRadioBurst\测试通道归一化\3\二分类\实验1.1_best.h5'
     length = 200
     size = (400, 100)
     local_web = LocalWeb(image_path, model_path, length, size)
