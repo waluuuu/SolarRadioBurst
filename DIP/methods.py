@@ -5,7 +5,7 @@
 # @Software : PyCharm
 # 中期报告时用来生成展示用的图片，包含了所有的方法
 # %%
-from Normal import Normal
+from Classes.Normal import Normal
 from show import show
 import cv2 as cv
 import numpy as np

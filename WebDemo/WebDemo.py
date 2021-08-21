@@ -3,6 +3,9 @@
 # @Author : 水神与月神
 # @File : WebDemo.py
 # @Software : PyCharm
+
+# 本地执行localWeb的代码，配合php文件一起运行
+
 import os
 import cv2 as cv
 from time import sleep

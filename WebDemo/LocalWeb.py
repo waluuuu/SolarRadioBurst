@@ -8,7 +8,7 @@ import cv2 as cv
 from keras import backend as K
 from ListMerge import list_merge
 from TestModel import TestModel
-from DIP.Normal import Normal
+from Classes.Normal import Normal
 from SlidingWindow.SlidingWindow import SlidingWindow
 
 
@@ -32,6 +32,7 @@ class LocalWeb:
 
     def process(self):
         positive = []
+        possible = []
         images = SlidingWindow(self._image_path, self._length)
         count = 0
         for image_info in images.out():
@@ -39,12 +40,17 @@ class LocalWeb:
             processed = Normal(image, self._size).image_in("Equalization")
             result = TestModel(self._model_path).predict(processed)
             print(result)
-            count+=1
+            count += 1
             print(count)
             if result < 0.5:
                 positive.append([image_info[1], image_info[2]])
+            elif 0.7 > result > 0.1:
+                possible.append([image_info[1], image_info[2]])
+            # if result == 0:
+            #     positive.append([image_info[1], image_info[2]])
             K.clear_session()
-        self._show(list_merge(positive))
+        location = list_merge(positive)
+        self._show(location)
 
     def _show(self, location):
         image = cv.imread(self._image_path, cv.IMREAD_UNCHANGED)
@@ -59,11 +65,9 @@ class LocalWeb:
 
 
 if __name__ == '__main__':
-    image_path = r"C:\Users\dell\Desktop\LM030122.srs.png"
+    image_path = r"C:\Users\dell\Desktop\LM010321.srs.png"
     model_path = r'F:\SolarRadioBurst\测试通道归一化\3\二分类\实验1.1_best.h5'
     length = 200
     size = (400, 100)
     local_web = LocalWeb(image_path, model_path, length, size)
     local_web.process()
-
-

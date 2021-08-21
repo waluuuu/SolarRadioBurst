@@ -6,6 +6,7 @@
 
 
 import cv2 as cv
+from keras.preprocessing.image import load_img, img_to_array
 
 
 class SlidingWindow:
@@ -16,7 +17,7 @@ class SlidingWindow:
     """
 
     def __init__(self, image_path, length):
-        self._image = cv.imread(image_path)  # 图片
+        self._image = img_to_array(load_img(image_path))
         self._length = length  # 划取长度
 
     def out(self):
@@ -33,4 +34,12 @@ class SlidingWindow:
         yield out, length - self._length, length
 
 
+###################################################
 
+# path = r"C:\Users\dell\Desktop\LM030122.srs.png"
+# image = img_to_array(load_img(path))
+# image2 = cv.imread(path)
+#
+# print(type(image))
+# print(type(image2))
+# print((image == image2).all())

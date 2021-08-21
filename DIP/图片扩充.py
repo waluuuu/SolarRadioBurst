@@ -4,7 +4,8 @@
 # @File : 图片扩充.py
 # @Software : PyCharm
 
-
+# 某类图片数量较少时，进行扩充
+# 直接使用《python深度学习》这本书上的代码，最好不要加上平移，不然可以明显看出是扩充过的
 import os
 import cv2 as cv
 from keras.preprocessing import image

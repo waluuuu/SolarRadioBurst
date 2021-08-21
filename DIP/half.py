@@ -4,6 +4,7 @@
 # @File : half.py
 # @Software : PyCharm
 
+# 将图片纵向对半分开
 import cv2 as cv
 import os
 
@@ -35,5 +36,3 @@ if __name__ == '__main__':
     path_read = r'C:\Users\dell\Desktop\001'
     path_save = r'C:\Users\dell\Desktop\half'
     half(path_read, path_save)
-
-

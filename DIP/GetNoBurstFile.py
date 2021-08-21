@@ -5,8 +5,6 @@
 # @Software : PyCharm
 
 import os
-import mypackage.dip_function as df
-import mypackage.dip_class as cf
 import datetime
 
 # %%
