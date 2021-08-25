@@ -55,7 +55,7 @@ class LocalWeb:
         image = cv.equalizeHist(image)
         image = cv.cvtColor(image, cv.COLOR_GRAY2RGB)
         for i in location:
-            cv.rectangle(image, (i[0], 50), (i[1], 750), (255, 0, 0))
+            cv.rectangle(image, (i[0], 50), (i[1], 750), (0, 0, 255))
 
         cv.imwrite('image.jpg', image)
 

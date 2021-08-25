@@ -59,7 +59,7 @@ class MainForm(QMainWindow, Ui_MainWindow):
     def image_classification(self):
 
         image_path = self._my_filename
-        model_path = r'D:\qt_code\实验1.1_best.h5'
+        model_path = r'F:\SolarRadioBurst\测试通道归一化\3\二分类\实验1.1_best.h5'
         length = 200
         size = (400, 100)
         local_web = LocalWeb(image_path, model_path, length, size)

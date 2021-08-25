@@ -6,13 +6,13 @@
 # 中期报告时用来生成展示用的图片，包含了所有的方法
 # %%
 from Classes.Normal import Normal
-from show import show
+from DIP.show import show
 import cv2 as cv
 import numpy as np
 
 # %% ------------读取图片-------------
 r"G:\LearmonthData\New\III\LM200102240110_III_25_180.jpg"
-path = r'G:\useful_L\2\CG199711030433_FN,H_30_130.jpg.jpg'
+path = r"C:\Users\dell\Desktop\image2.jpg"
 image = cv.imread(path)
 
 # %% --------------彩色图片转灰度图片------------------
@@ -38,7 +38,7 @@ kernel_1_10 = cv.getStructuringElement(cv.MORPH_RECT, (1, 5), (-1, -1))
 kernel_4_15 = cv.getStructuringElement(cv.MORPH_ELLIPSE, (4, 15), (-1, -1))
 dst = cv.erode(binary_img, kernel_1_10)  # 水平方向
 # dst2 = cv.dilate(dst, kernel_4_15)  # 水平方向
-images = np.hstack([binary_img, dst])
+images = np.hstack([dst])
 show("show", images)
 
 # %%----------------直方图均衡----------------
