@@ -19,6 +19,6 @@
    * 李恩泽：撰写报告、制作数据集、训练神经网络
    * 何若璞：编写软件、图像处理、网站维护
 
-前期的代码在这个仓库https://github.com/han-fuyun/old
+前期的代码在这个仓库https://github.com/han-fuyun/previous
 
 包括从原始的日志文件读取有效信息的代码，不过不想花时间去整理了
