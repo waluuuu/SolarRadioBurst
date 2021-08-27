@@ -3,6 +3,7 @@
 # @Author : 水神与月神
 # @File : CIII.py
 # @Software : PyCharm
+# 根据日志中爆发的时间，设置切割图片的时间
 
 
 import openpyxl
