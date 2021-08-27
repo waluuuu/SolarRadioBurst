@@ -3,7 +3,7 @@
 # @Author : 水神与月神
 # @File : ImageChoice.py
 # @Software : PyCharm
-
+# 这是用来制作数据集的，从分割好的图片中，随机选取图片制作训练用的数据集
 # 按照7：3制作的
 import os
 import shutil
