@@ -30,7 +30,7 @@
 
    * 何若璞：编写软件、图像处理、网站维护
 
-3. 成果展示：
+3. 成果展示：  
    ![image](https://user-images.githubusercontent.com/67349250/150627222-cb874f11-a02a-455b-b472-ee2d30c6ae33.png)
    
 
