@@ -24,6 +24,7 @@
      ![image](https://user-images.githubusercontent.com/51266570/150720319-a3a013b9-d117-48bb-9e88-1b8e16663991.png)
      
       其中f表示频谱的数据矩阵，g是通道归一化之后的处理结果。fLM是每个通道的均值。图 2.1展示了一个通道去噪后的例子。可以发现，对比图2.1中的两张图，条纹噪声得到了明显的改善，II型爆发的特征更加明显了。
+      
       ![image](https://user-images.githubusercontent.com/51266570/150720934-30b8d808-48a6-42fb-ba82-89f6569a780f.png)
       
       ![image](https://user-images.githubusercontent.com/51266570/150721085-3d9c32de-6e05-4641-aab0-ed201fca24d2.png)
