@@ -25,6 +25,7 @@
      
       其中f表示频谱的数据矩阵，g是通道归一化之后的处理结果。fLM是每个通道的均值。图 2.1展示了一个通道去噪后的例子。可以发现，对比图2.1中的两张图，条纹噪声得到了明显的改善，II型爆发的特征更加明显了。
       ![image](https://user-images.githubusercontent.com/51266570/150720934-30b8d808-48a6-42fb-ba82-89f6569a780f.png)
+      
       ![image](https://user-images.githubusercontent.com/51266570/150721085-3d9c32de-6e05-4641-aab0-ed201fca24d2.png)
 
        图2.1.1 通道归一化处理前后对比图
@@ -46,6 +47,7 @@
       使输入图像的直方图分布变的均匀，这样就会使图像的灰度级增加，从而可达到增强局部的对比度而不影响整体的对比度的效果，这对于背景和前景都太亮或者太暗的图像非常有用。
       
       ![image](https://user-images.githubusercontent.com/51266570/150721177-a80c6ff1-81f5-454c-8d08-5a3e1024162d.png)
+      
       ![image](https://user-images.githubusercontent.com/51266570/150721194-6bb1ad3b-9b2a-42bc-9b23-2cde144e1aab.png)
 
       图2.1.2 直方图均衡处理前后对比图
