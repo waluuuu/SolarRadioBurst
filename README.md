@@ -81,9 +81,10 @@
 
      Figure 2.2.2 CNN network parameter map
      
-      For four classifications, we use channel normalization, channel normalization + histogram equalization, and the results are as follows
+      For four classifications, we use channel normalization, channel normalization + histogram equalization, and the results are as follows:
      
-     ![QQ截图20220124123405](https://user-images.githubusercontent.com/51266570/150722610-e59ed31b-3a80-4260-89c2-845d2a0e1d6d.png)
+     ![QQ截图20220125111207](https://user-images.githubusercontent.com/51266570/150904081-103ab13f-2dd9-4549-ab34-85acc3487e80.png)
+
      
      ![image](https://user-images.githubusercontent.com/51266570/150722635-ce82c03e-fb4d-40a2-8880-f94909787419.png)![image](https://user-images.githubusercontent.com/51266570/150722648-54f20665-f62d-4d2e-9ea0-a00e06b4926d.png)
      
