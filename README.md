@@ -103,11 +103,12 @@
    ![image](https://user-images.githubusercontent.com/51266570/150722808-ccdbb8bf-a55c-4bc1-94f6-5c21e38d91e7.png)
 
    After completing the preprocessing of the image, the software will enter the stage of detecting the burst area of the solar radio spectrum. After completing the picture detection, the software will pop up a prompt of successful identification and display the statistical results of the number of burst areas.
-   Finally, click the "Outbreak Detection Display" button to display the identified solar radio spectrum, and you can click the "Zoom in" and "Zoom out" buttons and drag the slider to complete the browsing of the identified burst area.
    
    ![image](https://user-images.githubusercontent.com/67349250/150627222-cb874f11-a02a-455b-b472-ee2d30c6ae33.png)
    
    Visual detection of solar radio bursts
+   
+   Finally, click the "Outbreak Detection Display" button to display the identified solar radio spectrum, and you can click the "Zoom in" and "Zoom out" buttons and drag the slider to complete the browsing of the identified burst area.
    
    * 5.Summary of results
    
